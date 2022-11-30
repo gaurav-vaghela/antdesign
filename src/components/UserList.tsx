@@ -23,6 +23,7 @@ const UserList: React.FC<{
       key: 'category',
     },
   ];
+
   const data = [
     {
       key: 1,
@@ -39,7 +40,7 @@ const UserList: React.FC<{
           parent_code: 100,
           children: [
             {
-              key: 131,
+              key: 111,
               name: 'Resource3',
               type: 'Debit',
               code: 103,
@@ -48,31 +49,81 @@ const UserList: React.FC<{
           ],
         },
         {
-          key: 11,
+          key: 12,
           name: 'Resource2',
           type: 'Debit',
           code: 102,
           parent_code: 100,
-          children: [
-            {
-              key: 131,
-              name: 'Resource5',
-              type: 'Debit',
-              code: 201,
-              parent_code: 200,
-            },
-          ],
         },
       ],
     },
     {
-      key: 5,
+      key: 2,
       name: 'Resource4',
       type: 'Debit',
       code: 200,
       parent_code: null,
+      children: [
+        {
+          key: 21,
+          name: 'Resource5',
+          type: 'Debit',
+          code: 201,
+          parent_code: 200,
+        },
+      ],
     },
   ];
+  // const data = [
+  //   {
+  //     key: 1,
+  //     name: 'Resource',
+  //     type: 'Debit',
+  //     code: 100,
+  //     parent_code: null,
+  //     children: [
+  //       {
+  //         key: 11,
+  //         name: 'Resource1',
+  //         type: 'Debit',
+  //         code: 101,
+  //         parent_code: 100,
+  //         children: [
+  //           {
+  //             key: 131,
+  //             name: 'Resource3',
+  //             type: 'Debit',
+  //             code: 103,
+  //             parent_code: 101,
+  //           },
+  //         ],
+  //       },
+  //       {
+  //         key: 11,
+  //         name: 'Resource2',
+  //         type: 'Debit',
+  //         code: 102,
+  //         parent_code: 100,
+  //         children: [
+  //           {
+  //             key: 131,
+  //             name: 'Resource5',
+  //             type: 'Debit',
+  //             code: 201,
+  //             parent_code: 200,
+  //           },
+  //         ],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     key: 5,
+  //     name: 'Resource4',
+  //     type: 'Debit',
+  //     code: 200,
+  //     parent_code: null,
+  //   },
+  // ];
 
   const rowSelection = {
     onChange: (selectedRowKeys, selectedRows) => {
